@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "alfalearn-445c4": {
+      "hosting": {
+        "AlfavLearn": [
+          "alfalearn-445c4"
+        ]
+      }
+    }
+  }
+}
