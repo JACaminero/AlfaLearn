@@ -5,7 +5,7 @@ import { ClassComponent } from './components/class/class.component';
 import { SigninComponent } from './components/signin/signin.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent },
+  { path: '', redirectTo: '/class', pathMatch: 'full' },
   { path: 'signin', component: SigninComponent },
   { path: 'class', component: ClassComponent },
 ];

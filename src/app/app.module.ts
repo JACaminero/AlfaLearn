@@ -13,7 +13,7 @@ import { SigninComponent } from './components/signin/signin.component';
 import { CardComponent } from './components/card/card.component';
 import { ClassComponent } from './components/class/class.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ClassbuttonComponent } from './components/classbutton/classbutton.component';
+import { ClassbuttonComponent } from './components/class/classbutton/classbutton.component';
 
 @NgModule({
   declarations: [
