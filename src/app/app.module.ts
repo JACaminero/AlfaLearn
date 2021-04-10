@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire';
-import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,7 +13,7 @@ import { SigninComponent } from './components/signin/signin.component';
 import { CardComponent } from './components/card/card.component';
 import { ClassComponent } from './components/class/class.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ClassbuttonComponent } from './components/class/classbutton/classbutton.component';
+import { ClassContentComponent } from './components/class/class-content/class-content.component';
 
 @NgModule({
   declarations: [
@@ -22,17 +22,17 @@ import { ClassbuttonComponent } from './components/class/classbutton/classbutton
     SigninComponent,
     CardComponent,
     ClassComponent,
-    ClassbuttonComponent,
+    ClassContentComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AngularFireAnalyticsModule,
     AngularFireModule.initializeApp(environment.firebase),
     FormsModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule
   ],
   providers: [],
 

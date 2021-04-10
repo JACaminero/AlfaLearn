@@ -1,8 +1,9 @@
 <div class="jumbotron">        
     <h1 class="title">Clase de hoy</h1>
 </div>
-<div class="d-flex flex-column">
-    <app-classbutton [text]="'Teoria'"></app-classbutton>
-    <app-classbutton [text]="'Practicas'"></app-classbutton>
-    <app-classbutton [text]="'Pruebas'"></app-classbutton>
+<div class="d-flex flex-column container-fluid">
+    <!-- <router-outlet name="class"></router-outlet> -->
+    <app-class-content [text]="'Teoria'"></app-class-content>
+    <app-class-content [text]="'Practicas'"></app-class-content>
+    <app-class-content [text]="'Pruebas'"></app-class-content>
 </div>
