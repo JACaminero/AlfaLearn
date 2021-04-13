@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { environment } from '../environments/environment';
 import { SigninComponent } from './components/signin/signin.component';
-import { CardComponent } from './components/card/card.component';
+import { LetterOutlineCardComponent } from './components/letter-outline-card/letter-outline-card.component';
 import { ClassComponent } from './components/class/class.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ClassContentComponent } from './components/class/class-content/class-content.component';
@@ -20,7 +20,7 @@ import { ClassContentComponent } from './components/class/class-content/class-co
     AppComponent,
     TopbarComponent,
     SigninComponent,
-    CardComponent,
+    LetterOutlineCardComponent,
     ClassComponent,
     ClassContentComponent,
   ],

@@ -3,5 +3,8 @@
     alt="Logo" src="../../../assets/favicon.svg"/>
   <span>ALFALEARN</span>
   <div class="spacer"></div>
-  <button class="btn" routerLink="signin">Sign in</button>
+  <div *ngIf="userName == ''">
+    <button class="btn" routerLink="signin">Sign in</button>
+  </div>
+  <span readonly class="username">{{ userName }}</span>
 </div>
