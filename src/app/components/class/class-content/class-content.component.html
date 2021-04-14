@@ -8,19 +8,34 @@
     {{ text }}
   </div>
   <div class="p-3">
-    <img [ngClass]="isOpen ? 'icon-rotated' : 'icon-normal'"
+    <img
+      [ngClass]="isOpen ? 'icon-rotated' : 'icon-normal'"
       src="../../../assets/arrow_forward_ios_black_24dp.svg"
     />
   </div>
 </button>
 <div class="class-content container" [@openClose]="isOpen ? 'open' : 'closed'">
+  <!-- componenet -->
   <div class="row">
     <div class="col">
-      <app-card class="p-6" [title]="'the best'"></app-card>
+      <app-sound-input-card 
+      [imgUrl]="'../../../../assets/static-assets-upload11428064909395617563.png'"></app-sound-input-card>
     </div>
     <div class="col">
-      <app-card class="p-6" [imgUrl]="'https://upload.wikimedia.org/wikipedia/commons/b/b0/F_cursiva.gif'"
-        [title]="'ggafk'"></app-card>
+      <app-letter-outline-card class="p-6" [title]="'EFE'"
+       [imgUrl]="'https://upload.wikimedia.org/wikipedia/commons/b/b0/F_cursiva.gif'">
+      </app-letter-outline-card>
+    </div>
+  </div>
+  <!--  -->
+  <div class="row">
+    <div class="col">
+      <app-sound-input-card [soundUrl]="'../../../../assets/sounds/Flor.m4a'" 
+       [imgUrl]="'../../../../assets/flor-con-nombre-escrito-dibujo-colorear.jpg'"></app-sound-input-card>
+    </div>
+    <div class="col">
+      <app-letter-outline-card [title]="'FLOR'"
+      [imgUrl]="'../../../../assets/Cagney_transparent.png'"></app-letter-outline-card>
     </div>
   </div>
 </div>

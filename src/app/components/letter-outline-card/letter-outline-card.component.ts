@@ -1,7 +1,7 @@
 import { Component, Input , OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-card',
+  selector: 'app-letter-outline-card',
   templateUrl: './letter-outline-card.component.html',
   styleUrls: ['./letter-outline-card.component.less']
 })
